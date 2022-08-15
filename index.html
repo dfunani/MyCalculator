@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+
+	<body>
+		<h1>My Calculator App</h1>
+		<br>
+		<h3>A simple working calculator</h3>
+		<diV class="center">
+			<div class="container">
+				<input autofocus id="calculator-input" type=" text">
+				<div class="row">
+					<button onclick="inputNumber(1)">1</button>
+					<button onclick="inputNumber(2)">2</button>
+					<button onclick="inputNumber(3)">3</button>
+					<button id="symbols" onclick="inputNumber(' / ')">/</button>
+				</div>
+
+				<div class="row">
+					<button onclick="inputNumber(4)">4</button>
+					<button onclick="inputNumber(5)">5</button>
+					<button onclick="inputNumber(6)">6</button>
+					<button id="symbols" onclick="inputNumber(' * ')">*</button>
+				</div>
+
+				<div class="row">
+					<button onclick="inputNumber(7)">7</button>
+					<button onclick="inputNumber(8)">8</button>
+					<button onclick="inputNumber(9)">9</button>
+					<button id="symbols" onclick="inputNumber(' + ')">+</button>
+				</div>
+
+				<div class="row">
+					<button id="point" onclick="inputNumber('.')">.</button>
+					<button onclick="inputNumber(0)">0</button>
+					<button id="equals" onclick="calculate()">=</button>
+					<button id="symbols" onclick="inputNumber(' - ')">-</button>
+				</div>
+			</div>
+			<button id="reset" onclick="reset()">
+				Reset
+			</button>
+			<div id="done"></div>
+		</diV>
+		<script src="index.js"></script>
+	</body>
+
+</html>
